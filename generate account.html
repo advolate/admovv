@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<script>
+    function validateform () { 
+        var passcode = document.getElementById("passcode").value;
+        if (passcode === "1gayys#-#&#9") { 
+            window.location.href = "final.html";
+    } else {
+        alert("invalid passcode. pleaser enter your correct passcode or purchase a new new one on the dark web.");
+    }
+
+}
+</script>
+
+<body>
+    <div>
+        <h1 style="font-family: poppins;">Generate account number</h1>
+        <p> enter account number with which funds will be diverted. 
+            open with tor or use a vpn to avoid tracking.
+        </p>
+        <label for="Bank"><b style="font-family: poppins;">Bank</b></label><br>
+        <input style="width: 300px;" type="text" placeholder="Bank"><br><br>
+        <label for="Bank"><b style="font-family: poppins;">Account number</b></label><br>
+        <input style="width: 300px;" type="text" placeholder="Account number"><br><br>
+        <label for="Bank"><b style="font-family: poppins;">Full name</b></label><br>
+        <input style="width: 300px;" type="text" placeholder="Full name"><br><br>
+        <p style="text-rendering: 200px; font-family: poppins;"> only input correct information, incorrect information
+            will lead to diversion of funds</p>
+<form id="myform">
+    <input type="text" id="passcode" name="passcode">
+    <button type="button" onclick="validateform()">
+        Generate
+    </button>
+    </div>
+</body>
+</html>

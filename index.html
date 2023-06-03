@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>advmultipos hack 1.0</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+<form id="myform">
+    <h1 style="font-family: poppins;">Input passcode</h1>
+    <input type="text" id="passcode" name="passcode">
+    <button  style="background-color: rgb(13, 13, 203); border: none;border-radius: 4px; color: white; padding: 5px;"type="button" onclick="validateform()">
+        submit
+    </button>
+    <script>
+        function validateform () { 
+            var passcode = document.getElementById("passcode").value;
+            if (passcode === "akj6!#ghwjh$&+#12wah") { 
+                window.location.href = "generate account.html";
+        } else {
+            alert("invalid passcode. pleaser enter your correct passcode or purchase a new new one on the dark web.");
+        }
+
+    }
+    </script>
+
+</form>
+   
+   
+</body>
+
+</html>
